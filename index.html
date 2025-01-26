@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WideCanvas.ai Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #8B5CF6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold gradient-text">WideCanvas.ai</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-gray-900">Features</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-gray-900">How it works</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-gray-900">Pricing</a>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Get Started
+                    </button>
+                </div>
+                <button class="md:hidden flex items-center">
+                    <i class="bi bi-list text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Turn Wireframes into
+                <span class="gradient-text">Working Prototypes</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                Upload your wireframes and get a fully functional prototype in minutes. 
+                Powered by advanced AI to understand your design intentions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition text-lg">
+                    Try Demo
+                </button>
+                <button class="border border-gray-300 px-8 py-3 rounded-lg hover:bg-gray-50 transition text-lg">
+                    Watch Video <i class="bi bi-play-circle ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="bi bi-lightning-charge text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Instant Prototypes</h3>
+                    <p class="text-gray-600">Get working prototypes in seconds, not hours. Our AI understands your design intent.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="bi bi-code-slash text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Clean Code Output</h3>
+                    <p class="text-gray-600">Generate production-ready HTML, CSS, and JavaScript code that's easy to customize.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="bi bi-phone text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Responsive Design</h3>
+                    <p class="text-gray-600">All prototypes are fully responsive and work perfectly across all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">How it Works</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-blue-600 text-xl font-bold">1</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Upload Wireframe</h3>
+                    <p class="text-gray-600">Upload your low-fidelity wireframe or sketch</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-blue-600 text-xl font-bold">2</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">AI Processing</h3>
+                    <p class="text-gray-600">Our AI analyzes and understands your design</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-blue-600 text-xl font-bold">3</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Get Working Prototype</h3>
+                    <p class="text-gray-600">Receive your functional prototype instantly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Simple Pricing</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Free</h3>
+                    <div class="text-4xl font-bold mb-6">$0<span class="text-lg text-gray-500">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="bi bi-check2 text-green-500 mr-2"></i> 5 projects/month</li>
+                        <li class="flex items-center"><i class="bi bi-check2 text-green-500 mr-2"></i> Basic features</li>
+                        <li class="flex items-center"><i class="bi bi-check2 text-green-500 mr-2"></i> Community support</li>
+                    </ul>
+                    <button class="w-full border border-blue-600 text-blue-600 py-2 rounded-lg hover:bg-blue-50 transition">
+                        Get Started
+                    </button>
+                </div>
+                <div class="bg-blue-600 p-8 rounded-xl shadow-lg transform scale-105">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Pro</h3>
+                    <div class="text-4xl font-bold mb-6 text-white">$29<span class="text-lg text-blue-200">/month</span></div>
+                    <ul class="space-y-3 mb-8 text-white">
+                        <li class="flex items-center"><i class="bi bi-check2 mr-2"></i> Unlimited projects</li>
+                        <li class="flex items-center"><i class="bi bi-check2 mr-2"></i> Advanced features</li>
+                        <li class="flex items-center"><i class="bi bi-check2 mr-2"></i> Priority support</li>
+                        <li class="flex items-center"><i class="bi bi-check2 mr-2"></i> Custom exports</li>
+                    </ul>
+                    <button class="w-full bg-white text-blue-600 py-2 rounded-lg hover:bg-blue-50 transition">
+                        Get Started
+                    </button>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Enterprise</h3>
+                    <div class="text-4xl font-bold mb-6">Custom</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="bi bi-check2 text-green-500 mr-2"></i> Unlimited everything</li>
+                        <li class="flex items-center"><i class="bi bi-check2 text-green-500 mr-2"></i> Custom features</li>
+                        <li class="flex items-center"><i class="bi bi-check2 text-green-500 mr-2"></i> Dedicated support</li>
+                        <li class="flex items-center"><i class="bi bi-check2 text-green-500 mr-2"></i> SLA guarantees</li>
+                    </ul>
+                    <button class="w-full border border-blue-600 text-blue-600 py-2 rounded-lg hover:bg-blue-50 transition">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gradient-text">WideCanvas.ai</h3>
+                    <p class="text-gray-400">Turn your wireframes into working prototypes instantly with AI.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Features</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-github text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 WideCanvas.ai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.querySelector('button.md\\:hidden');
+        const nav = document.querySelector('.md\\:flex.items-center');
+        
+        menuButton.addEventListener('click', () => {
+            nav.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
